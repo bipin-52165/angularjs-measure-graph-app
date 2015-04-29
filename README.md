@@ -1,9 +1,9 @@
 AngularJS-RubyOnRails - Mesure & Graph Application
 
-Features
+Features:
 ----------------------
 
-- Mesure Heart Rate Tracking: 
+- Mesure Heart Rate Tracking 
 - Mesure Blood Glucose Level
 - Mesure Weight Level
 
@@ -18,7 +18,7 @@ Output:
 
 User is able to edit their most recent measurements (within a specified number of days), and view past measurements on a graph
 
-Technology
+Technology:
 ------------------
 
 1) AngularJS
@@ -26,7 +26,7 @@ Technology
 3) Angular Highchart
 4) Bootstrap
 
-Installation guide
+Installation guide:
 --------------------------
 
 1 install ruby version with below command:
