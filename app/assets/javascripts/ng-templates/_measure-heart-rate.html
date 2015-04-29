@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <form novalidate role="form" name="saveForm" ng-submit="saveMyHeartRate()">
+        <input type="hidden" ng-model="heart_rate.rate" required>
+        <div class="mb20 text-center">
+          <img src="/assets/heart.png" alt="" />
+        </div>
+        <div class="row">
+          <div class="col-xs-10">
+            <p>To measure your heart rate, count how many times that your heart beat in 10 seconds.</p>
+            <p>Input the number of times you heard in beat in 10 seconds in the picker to the right.</p>
+            <p>Press 'Save my heart rate' when you are done selecting.</p>
+          </div>
+          <div class="col-xs-2 text-center mt20 p0">
+            <slick dots=false infinite=false speed=300 slides-to-show=3 touch-move=true draggable=true slides-to-scroll=1 vertical=true class="slider one-time">
+              <div ng-repeat="n in [1, 100] | makeRange">
+                <a href="javascript:void(0)" ng-click="setCounter(n)"><h3>{{n}}</h3></a>
+              </div>
+            </slick>
+          </div>
+          <div class="col-xs-12 text-center mb20">
+            <input class="btn btn-danger" type="submit" ng-disabled="saveForm.$invalid" value="Save my heart rate">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

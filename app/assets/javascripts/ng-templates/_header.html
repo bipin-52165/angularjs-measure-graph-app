@@ -1,0 +1,40 @@
+<header>
+  <div class="HeaderTop">
+    <a href="#/" class="homeIcon">&nbsp;</a>
+    <span ng-show="current_state_name == 'app.layout.measure_heart_rate' || current_state_name == 'app.layout.heart_rate_data'">My HR & BP</span>
+    <span ng-show="current_state_name == 'app.layout.measure_weight_rate' || current_state_name == 'app.layout.weight_rate_data'">My Weight</span>
+    <span ng-show="current_state_name == 'app.layout.measure_blood_glucose' || current_state_name == 'app.layout.blood_glucose_data'">My Blood / Glucose</span>
+    <a href="#/" class="infoIcon">&nbsp;</a>
+  </div>
+  <ul class="navMenu">
+    <li ng-class="{ 'active' : current_state_name == 'app.layout.measure_heart_rate' || current_state_name == 'app.layout.heart_rate_data' }"><a ui-sref="app.layout.measure_heart_rate">HR & BP</a></li>
+    <li ng-class="{ 'active' : current_state_name == 'app.layout.measure_weight_rate' || current_state_name == 'app.layout.weight_rate_data' }"><a ui-sref="app.layout.measure_weight_rate">Weight</a></li>
+    <li ng-class="{ 'active' : current_state_name == 'app.layout.measure_blood_glucose' || current_state_name == 'app.layout.blood_glucose_data' }"><a ui-sref="app.layout.measure_blood_glucose">Blood / Glucose</a></li>
+  </ul>
+</header>
+<ul class="subMenu" ng-show="current_state_name == 'app.layout.measure_heart_rate' || current_state_name == 'app.layout.heart_rate_data'">
+  <li ng-class="{ 'active' : current_state_name == 'app.layout.measure_heart_rate' }">
+    <a ui-sref="app.layout.measure_heart_rate">Measure Heart Rate</a>
+  </li>
+  <li ng-class="{ 'active' : current_state_name == 'app.layout.heart_rate_data' }">
+    <a ui-sref="app.layout.heart_rate_data">Heart Rate Data</a>
+  </li>
+</ul>
+
+<ul class="subMenu" ng-show="current_state_name == 'app.layout.measure_weight_rate' || current_state_name == 'app.layout.weight_rate_data'">
+  <li ng-class="{ 'active' : current_state_name == 'app.layout.measure_weight_rate' }">
+    <a ui-sref="app.layout.measure_weight_rate">Measure Weight Level</a>
+  </li>
+  <li ng-class="{ 'active' : current_state_name == 'app.layout.weight_rate_data' }">
+    <a ui-sref="app.layout.weight_rate_data">Weight Level Data</a>
+  </li>
+</ul>
+
+<ul class="subMenu" ng-show="current_state_name == 'app.layout.measure_blood_glucose' || current_state_name == 'app.layout.blood_glucose_data'">
+  <li ng-class="{ 'active' : current_state_name == 'app.layout.measure_blood_glucose' }">
+    <a ui-sref="app.layout.measure_blood_glucose">Measure Blood/glucose Level</a>
+  </li>
+  <li ng-class="{ 'active' : current_state_name == 'app.layout.blood_glucose_data' }">
+    <a ui-sref="app.layout.blood_glucose_data">Blood/Glucose Level Data</a>
+  </li>
+</ul>

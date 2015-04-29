@@ -1,0 +1,2 @@
+module Api::HeartRatesHelper
+end

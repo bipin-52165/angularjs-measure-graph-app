@@ -1,0 +1,12 @@
+!!!
+%html{"ng-app" => "AngularApp"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}/
+    %title AngularJS - Mesure + Graph Application
+    = stylesheet_link_tag 'angularjs_app', media: 'all'
+    = csrf_meta_tags
+  %body
+    = yield
+    = javascript_include_tag 'angularjs_app'
